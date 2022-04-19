@@ -1,0 +1,8 @@
+@import '~bootstrap/dist/css/bootstrap';
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import './myStyle.css';
+@import '~flag-icon-css/css/flag-icons';
+@import '~bootstrap-icons/font/bootstrap-icons';
+@import '~dropzone/dist/basic';
+@import '~dropzone/dist/dropzone';
+/* @import '~swiper/css'; */

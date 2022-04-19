@@ -1,0 +1,196 @@
+:root {
+ --main : #F28123;
+ --grey : rgba(201, 197, 197, 0.637);
+}
+* {
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+}
+.grey-text-color{
+    color:  var(--grey);
+}
+.main-text-color {
+    color: var(--main);
+}
+.main-bg-color{
+    background-color: var(--main);
+}
+
+.navbar-presto{
+    transition: all 1s ease ;
+}
+
+.masthead {
+    height: calc(100vh - 50px);
+    background: linear-gradient(#00000030 , #00000030 ), url('../../public/img/piantala.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.navbar{
+    box-shadow: none;
+}
+
+
+.nav-link:hover, .nav-link:focus , .nav-link:active {
+    color: #c3600e;
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.my-blur {
+filter: blur(8px);
+
+}
+
+.my-form-control:focus{
+    border-color: black;
+
+}
+.my-form-outline:focus{
+    border: solid 2px red;
+}
+
+.input-search input {
+    /* padding: 12px 6px; */
+    background: #ffffffa1;
+    backdrop-filter: blur(10px);   
+}
+        
+.input-search button {
+    color: var(--main);
+    border-color: var(--main);
+}
+.input-search button:hover {
+    color: white;
+    background: var(--main);
+}
+.input-search input:focus{
+    box-shadow: none;
+    border-color: transparent;
+}
+.my-text-shadow{
+    /* text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(0,0,0,0); */
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.roundedImage{
+    height: 400px;
+    width: 400px;
+    border-radius: 400px;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: var(--main);
+    outline-offset: 10px;
+    transition:all 0.5s ease-in-out;
+}
+
+.roundedImage:hover{
+    transform: scale(1.1);
+    outline-offset: 0px;
+    outline-color: #f2802300;
+}
+.cta-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.274),rgba(0, 0, 0, 0.251)) , url(../../public/img/fogliala.jpg);
+    height: 80vh;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.input-search input {
+    padding: 12px 6px;
+    background: #ffffffa1;
+    backdrop-filter: blur(10px);
+    }
+    
+.input-search button {
+    color: var(--main);
+    border-color: var(--main);
+}
+.input-search button:hover {
+    color: white;
+    background: var(--main);
+}
+.input-search input:focus{
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.my-padding-from-nav {
+    padding-top: 100px;
+}
+
+.my-hr-shadow {
+    height: 1px;
+    width: 75%;
+    background: var(--main); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 5px 5px 5px rgba(0, 0, 0, 0.039);
+}
+
+.card {
+    transition:all 0.5s;
+}
+
+.card-header{
+    border-bottom: 1px solid #F28123;
+}
+
+.card-footer{
+    border-top: 1px solid #F28123;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.my-h1-size{
+    font-size: 2.5rem;
+}
+
+.classe2{
+    display: none;
+}
+
+.my-margin-bottom-100{
+    margin-bottom: 200px;
+}
+
+.compari{
+    opacity: 0;
+    transition:all 5.0s;
+}
+
+.category-button{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 991px) {
+    .navbar-presto{
+        background-color: #262626;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-logo{
+        display: flex;
+        justify-content: center;
+        margin: auto !important;
+    }
+
+    .classe2{
+        display: block;
+    }
+
+    .classe1{
+        display: none;
+    }
+
+    .navbar>.container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
